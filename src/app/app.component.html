@@ -1,0 +1,157 @@
+<div class="ewk container mx-auto my-10">
+  <main class="grid grid-cols-4">
+    <div style="grid-row: 1/4; background-color: white;">
+      <div class="text-center">
+        <kol-heading _level="2">DIVID</kol-heading>
+        <kol-heading _level="4">EWK-Fonds</kol-heading>
+      </div>
+
+      <kol-nav
+        _hasCompactButton="true"
+        _variant="primary"
+        _orientation="vertical"
+        _links='[{"_label":"Startseite","_href":"startseite", "_children":[{"_label":"1. Untermenüpunkt","_href":"startseite/1-untermenuepunkt"},{"_label":"2. Untermenüpunkt","_href":"startseite/2-untermenuepunkt"}]},{"_label":"Register","_href":"unterseite"},{"_label":"Ihre Formulare","_href":"unterseite"},{"_label":"Ihre Bescheide","_href":"unterseite"},{"_label":"Hilfe und Support","_href":"unterseite"}]'
+      ></kol-nav>
+    </div>
+
+    <div
+      class="grid grid-cols-2 gap-6 p-12"
+      style="grid-column-start: 2; grid-column-end: 4;"
+    >
+      <div class="span-2">
+        <kol-heading _level="1"
+          >Hallo Max Meier! <br />
+          Willkommen in Ihrem EWK-Konto.</kol-heading
+        >
+      </div>
+      <kol-card _max-height="vh2" _heading=" ">
+        <div slot="header">
+          <kol-badge _color="#404040" _label="Schritt 1"></kol-badge>
+        </div>
+
+        <div slot="content">
+          <h3>Mengenmeldung starten</h3>
+          <p>
+            Jährliche Meldung über Ihre in Verkehr gebrachte Menge an
+            EWK-Produkten.
+          </p>
+        </div>
+      </kol-card>
+
+      <kol-card _max-height="vh2" _heading=" ">
+        <div slot="header">
+          <kol-badge _color="#404040" _label="Schritt 1"></kol-badge>
+        </div>
+
+        <div slot="content">
+          <h3>Einzahlung starten</h3>
+          <p>
+            Jährliche Abgaben in den EWK-Fonds, basierend auf der Menge der in
+            Verkehr gebrachten EWK-Produkte.
+          </p>
+        </div>
+      </kol-card>
+      <kol-card _max-height="vh2" _heading=" " class="span-2">
+        <div slot="header">
+          <kol-badge _color="#404040" _label="Optional"></kol-badge>
+        </div>
+
+        <div slot="content">
+          <h3>Einordungstest starten</h3>
+          <p>Kostenloser Self-Check zur Abgabepflicht Ihrer Produkte.</p>
+        </div>
+      </kol-card>
+    </div>
+    <div class="grid gap-6 p-12">
+      <kol-card _heading="Ihre Mitteilungen" _max-height="vh1">
+        <div slot="header">
+          <kol-badge
+            _iconOnly="true"
+            _color="#5ead35"
+            _icon="icofont-alarm"
+          ></kol-badge>
+        </div>
+
+        <div slot="content">
+          <kol-badge _color="#5ead35" _label="VOR EINER STUNDE"></kol-badge>
+          <p>
+            Bitte vervollständen Sie ihre Stammdaten, um Ihre Registrierung
+            abzuschließen.
+          </p>
+          <kol-indented-text> UBA Grün #5EAD35 </kol-indented-text>
+        </div>
+      </kol-card>
+      <kol-card _heading="Ihre Mitteilungen" _max-height="vh1">
+        <div slot="header">
+          <kol-badge
+            _iconOnly="true"
+            _color="#3ead35"
+            _icon="icofont-alarm"
+          ></kol-badge>
+        </div>
+
+        <div slot="content">
+          <kol-badge _color="#3ead35" _label="VOR EINER STUNDE"></kol-badge>
+          <p>
+            Bitte vervollständen Sie ihre Stammdaten, um Ihre Registrierung
+            abzuschließen.
+          </p>
+          <kol-indented-text>
+            Ähnliches Grün, Kontrastberechnung #3EAD35
+          </kol-indented-text>
+        </div>
+      </kol-card>
+    </div>
+    <div class="p-6" style="grid-column-start: 2; grid-column-end: 5;">
+      <div>
+        <kol-heading _level="1">Häufig gestellte Fragen</kol-heading>
+        <kol-tabs
+          _selected="0"
+          _tabs='[{"_label":"Registrierung"},{"_label":"Stammdatenverwaltung"},{"_label":"Mengenmeldung"},{"_label":"Einzahlung"},{"_label":"Bescheide"}]'
+        >
+          <div>
+            <kol-accordion _heading="Wer muss sich registrieren?" _level="2">
+              <div slot="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                vel efficitur nunc. Donec non arcu euismod, viverra tortor at,
+                imperdiet diam. Fusce nec augue non neque scelerisque luctus.
+              </div></kol-accordion
+            >
+            <kol-accordion
+              _heading="Wie läuft der Registrierungsprozess ab?"
+              _level="2"
+              ><div slot="content">
+                Um sich zu registrieren müssen Hersteller zunächst einen Account
+                auf der EWK-Fonds Plattform anlegen. Hierfür müssen der
+                Unternehmensname und eine E-Mail Adresse hinterlegt sowie ein
+                Passwort gewählt werden. Danach...
+              </div></kol-accordion
+            >
+            <kol-accordion
+              _heading="Kann eine bevollmächtigte Person den Registrierungsprozess für mich übernehmen?"
+              _level="2"
+              ><div slot="content">
+                Morbi et risus vel odio ultricies suscipit ac quis lacus. Sed
+                iaculis ut erat eget scelerisque. Phasellus efficitur tortor vel
+                feugiat posuere. Maecenas eleifend congue egestas.
+              </div></kol-accordion
+            >
+          </div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </kol-tabs>
+      </div>
+    </div>
+    <footer class="footer" style="grid-column-start: 2; grid-column-end: 5;">
+      <kol-link-group
+        _ariaLabel="Sitemap"
+        _links='[{"_label":"Startseite","_href":"startseite", "_children":[{"_label":"1. Untermenüpunkt","_href":"startseite/1-untermenuepunkt"},{"_label":"2. Untermenüpunkt","_href":"startseite/2-untermenuepunkt"}]},{"_label":"Register","_href":"unterseite"},{"_label":"Ihre Formulare","_href":"unterseite"},{"_label":"Ihre Bescheide","_href":"unterseite"},{"_label":"Hilfe und Support","_href":"unterseite"}]'
+        _orientation="horizontal"
+        _list-style-type="none"
+      >
+      </kol-link-group>
+    </footer>
+  </main>
+</div>
